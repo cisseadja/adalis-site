@@ -1,0 +1,83 @@
+{
+  "titre_page": "Produits",
+  "sections": [
+    {
+      "type": "entete",
+      "titre": "Nos produits",
+      "texte": "Modules JinkoSolar et stockage Dyness, avec fiches techniques et conseils d’intégration."
+    },
+    {
+      "type": "section",
+      "titre": "Modules JinkoSolar",
+      "texte": "Technologie N-Type TOPCon / HOT 3.0 : modules bifaciaux double verre haute performance.",
+      "tableau": [
+        {
+          "reference": "JKM575-600N-72HL4-BDV",
+          "puissance": "575–600 W",
+          "cellules": "144 (72×2)",
+          "dimensions": "2278 × 1134 × 30 mm",
+          "poids": "31,0 kg"
+        },
+        {
+          "reference": "JKM605-630N-66HL4M-BDV",
+          "puissance": "605–630 W",
+          "cellules": "132 (66×2)",
+          "dimensions": "2382 × 1134 × 30 mm",
+          "poids": "32,4 kg"
+        }
+      ],
+      "cartes": [
+        {
+          "titre": "N-Type TOPCon",
+          "texte": "Rendement supérieur, dégradation initiale minimale."
+        },
+        {
+          "titre": "Bifacial double verre",
+          "texte": "Captation face avant et arrière, verre trempé de 2,0 mm."
+        },
+        {
+          "titre": "Durable",
+          "texte": "1500 VDC, boîte de jonction IP68, conformité IEC."
+        }
+      ],
+      "note": "Conditions STC : 1000 W/m², 25 °C, AM 1,5. Fiches techniques disponibles sur demande."
+    },
+    {
+      "type": "section",
+      "fond": "bande",
+      "titre": "Stockage Dyness DL5.0C",
+      "texte": "Module LFP basse tension pour le résidentiel et le petit tertiaire, en autonomie ou en hybride.",
+      "chiffres": [
+        {
+          "valeur": "5,12 kWh",
+          "label": "Énergie nominale"
+        },
+        {
+          "valeur": "6 000",
+          "label": "Cycles"
+        },
+        {
+          "valeur": "90 %",
+          "label": "Profondeur de décharge"
+        }
+      ],
+      "liste": [
+        "De 5,12 à 256 kWh, jusqu’à 50 modules en parallèle",
+        "Montage mural, au sol ou empilé",
+        "Compatible SMA, Victron, Goodwe, Solis, Deye",
+        "CAN, RS485, RS232 et application mobile",
+        "Chauffage en option jusqu’à −20 °C",
+        "UN 38.3, CE-EMC, IEC 62619, CEI 0-21"
+      ]
+    },
+    {
+      "type": "cta",
+      "titre": "Un projet solaire ?",
+      "texte": "Une étude technique est réalisée avant toute proposition définitive.",
+      "bouton": {
+        "label": "Demander un devis",
+        "lien": "contact.html"
+      }
+    }
+  ]
+}

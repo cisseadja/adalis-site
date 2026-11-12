@@ -1,0 +1,85 @@
+{
+  "titre_page": "Solutions solaires à Dakar",
+  "sections": [
+    {
+      "type": "hero",
+      "titre": "L’efficacité en mouvement",
+      "texte": "Solutions photovoltaïques pour résidences, PME et industries, de l’étude à la maintenance. Basés à Dakar.",
+      "boutons": [
+        {
+          "label": "Demander une étude",
+          "lien": "contact.html"
+        },
+        {
+          "label": "Voir les produits",
+          "lien": "produits.html",
+          "style": "alt"
+        }
+      ],
+      "images": [
+        "images/hero.jpg",
+        "images/industrie.jpg",
+        "images/residentiel.jpg",
+        "images/pme.jpg"
+      ]
+    },
+    {
+      "type": "section",
+      "titre": "Un projet solaire, de A à Z",
+      "texte": "ADALIS GLOBAL SERVICES accompagne particuliers, PME et industriels dans la conception et la mise en œuvre de solutions photovoltaïques adaptées à leurs besoins.",
+      "chiffres": [
+        {
+          "valeur": "30 ans",
+          "label": "Garantie linéaire des modules"
+        },
+        {
+          "valeur": "12 ans",
+          "label": "Garantie produit"
+        },
+        {
+          "valeur": "575–630 W",
+          "label": "Modules JinkoSolar"
+        }
+      ],
+      "bouton": {
+        "label": "Nos services",
+        "lien": "services.html"
+      }
+    },
+    {
+      "type": "section",
+      "fond": "bande",
+      "titre": "Nos solutions",
+      "texte": "Une offre pour chaque type de client.",
+      "cartes": [
+        {
+          "titre": "Résidentiel",
+          "texte": "Production, autoconsommation, stockage et alimentation de secours pour maisons et logements.",
+          "image": "images/residentiel.jpg",
+          "alt": "Gros plan sur un panneau solaire au soleil couchant"
+        },
+        {
+          "titre": "PME et commerces",
+          "texte": "Bureaux, commerces, ateliers, hôtels, restaurants, établissements scolaires.",
+          "image": "images/pme.jpg",
+          "alt": "Technicien posant un panneau solaire sur un toit"
+        },
+        {
+          "titre": "Industrie",
+          "texte": "Fortes puissances pour toitures et sites industriels, avec stockage possible.",
+          "image": "images/industrie.jpg",
+          "alt": "Champ de panneaux solaires au coucher du soleil"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "titre": "Un projet solaire ?",
+      "texte": "Une étude technique est réalisée avant toute proposition définitive.",
+      "bouton": {
+        "label": "Demander un devis",
+        "lien": "contact.html"
+      }
+    }
+  ]
+}
