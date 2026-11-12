@@ -1,0 +1,56 @@
+{
+  "titre_page": "À propos",
+  "sections": [
+    {
+      "type": "entete",
+      "titre": "À propos d’Adalis",
+      "texte": "L’efficacité en mouvement : une entreprise solaire installée à Dakar, au service des particuliers, des PME et des industriels."
+    },
+    {
+      "type": "section",
+      "titre": "Qui sommes-nous",
+      "texte": "ADALIS GLOBAL SERVICES est une société à responsabilité limitée (SARL) implantée à Sacré-Cœur 3, à Dakar. Spécialisée dans l’énergie solaire, elle conçoit et met en œuvre des solutions photovoltaïques adaptées aux besoins de chaque client.\n\nNotre expertise couvre tout le cycle d’un projet solaire : l’étude et le dimensionnement, l’installation, la mise en service, puis la maintenance des équipements."
+    },
+    {
+      "type": "section",
+      "fond": "bande",
+      "titre": "Nos engagements",
+      "cartes": [
+        {
+          "titre": "Une étude avant tout",
+          "texte": "Une étude technique est réalisée avant toute proposition définitive."
+        },
+        {
+          "titre": "Un accompagnement dédié",
+          "texte": "Fiches techniques, conseils d’intégration personnalisés et support de projet."
+        },
+        {
+          "titre": "Du matériel garanti",
+          "texte": "Modules JinkoSolar : 12 ans de garantie produit et 30 ans de garantie linéaire de puissance."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "titre": "Ce que nous faisons",
+      "liste": [
+        "Vente de matériels photovoltaïques",
+        "Étude et dimensionnement des installations",
+        "Installation et mise en service",
+        "Autoconsommation énergétique",
+        "Stockage d’énergie par batteries",
+        "Maintenance, suivi et optimisation"
+      ],
+      "note": "Société : ADALIS GLOBAL SERVICES SARL · Sacré-Cœur 3, N° 9257, Dakar, Sénégal · NINEA 012 57 01 58"
+    },
+    {
+      "type": "cta",
+      "titre": "Parlons de votre projet",
+      "texte": "Décrivez votre besoin, nous vous répondons sur WhatsApp.",
+      "bouton": {
+        "label": "Demander un devis",
+        "lien": "contact.html"
+      }
+    }
+  ]
+}
