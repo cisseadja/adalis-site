@@ -1,0 +1,402 @@
+backend:
+  name: github
+  repo: cisseadja/adalis-site
+  branch: main
+locale: fr
+media_folder: images
+public_folder: /images
+site_url: https://VOTRE-SITE.netlify.app
+display_url: https://VOTRE-SITE.netlify.app
+logo_url: /images/logo.png
+collections:
+- label: Pages du site
+  name: pages
+  files:
+  - label: Accueil
+    name: accueil
+    file: data/accueil.json
+    format: json
+    fields:
+    - label: Titre de l’onglet du navigateur
+      name: titre_page
+      widget: string
+      required: false
+    - label: Contenu de la page
+      name: sections
+      widget: list
+      types: &id003
+      - label: Grande image d’accueil (diaporama)
+        name: hero
+        widget: object
+        fields:
+        - label: Titre
+          name: titre
+          widget: string
+          required: false
+        - label: Texte
+          name: texte
+          widget: text
+          required: false
+        - label: Boutons
+          name: boutons
+          widget: list
+          required: false
+          fields:
+          - label: Texte
+            name: label
+            widget: string
+            required: false
+          - label: Lien
+            name: lien
+            widget: string
+            required: false
+          - label: Style
+            name: style
+            widget: select
+            required: false
+            options:
+            - plein
+            - alt
+            default: plein
+        - label: Photos du diaporama
+          name: images
+          widget: list
+          required: false
+          field:
+            label: Photo
+            name: image
+            widget: image
+            required: false
+      - label: Titre de page
+        name: entete
+        widget: object
+        fields:
+        - label: Titre
+          name: titre
+          widget: string
+          required: false
+        - label: Texte
+          name: texte
+          widget: text
+          required: false
+      - label: Bloc de contenu
+        name: section
+        widget: object
+        fields:
+        - label: Fond
+          name: fond
+          widget: select
+          required: false
+          options:
+          - clair
+          - bande
+          default: clair
+        - label: Coller au bloc précédent
+          name: serre
+          widget: boolean
+          required: false
+          default: false
+        - label: Texte en grand (citation)
+          name: grand
+          widget: boolean
+          required: false
+          default: false
+        - label: Titre
+          name: titre
+          widget: string
+          required: false
+        - label: Texte (laisser une ligne vide pour un nouveau paragraphe)
+          name: texte
+          widget: text
+          required: false
+        - &id002
+          label: Chiffres clés
+          name: chiffres
+          widget: list
+          required: false
+          fields:
+          - label: Valeur (ex. 81,26 kWc)
+            name: valeur
+            widget: string
+            required: false
+          - label: Légende
+            name: label
+            widget: string
+            required: false
+        - label: Tableau des modules
+          name: tableau
+          widget: list
+          required: false
+          fields:
+          - label: Référence
+            name: reference
+            widget: string
+            required: false
+          - label: Puissance
+            name: puissance
+            widget: string
+            required: false
+          - label: Cellules
+            name: cellules
+            widget: string
+            required: false
+          - label: Dimensions
+            name: dimensions
+            widget: string
+            required: false
+          - label: Poids
+            name: poids
+            widget: string
+            required: false
+        - label: Cartes
+          name: cartes
+          widget: list
+          required: false
+          fields: &id001
+          - label: Titre
+            name: titre
+            widget: string
+            required: true
+          - label: Texte
+            name: texte
+            widget: text
+            required: false
+          - label: Photo
+            name: image
+            widget: image
+            required: false
+          - label: Description de la photo
+            name: alt
+            widget: string
+            required: false
+            hint: Décrit la photo pour les malvoyants et Google
+          - label: Ligne en vert (ex. 9,44 kWc · Installation)
+            name: etiquette
+            widget: string
+            required: false
+          - label: Format de la photo
+            name: format
+            widget: select
+            required: false
+            options:
+            - paysage
+            - carre
+            default: paysage
+          - label: Cadrage (ex. center 70%)
+            name: cadrage
+            widget: string
+            required: false
+        - label: Liste à puces
+          name: liste
+          widget: list
+          required: false
+          field:
+            label: Ligne
+            name: ligne
+            widget: string
+            required: false
+        - label: Note en petit
+          name: note
+          widget: text
+          required: false
+        - label: Titre de la galerie photo
+          name: galerie_titre
+          widget: string
+          required: false
+        - label: Galerie photo
+          name: galerie
+          widget: list
+          required: false
+          fields: *id001
+        - label: Bouton
+          name: bouton
+          widget: object
+          required: false
+          fields:
+          - label: Texte du bouton
+            name: label
+            widget: string
+            required: false
+          - label: Lien (ex. contact.html)
+            name: lien
+            widget: string
+            required: false
+      - label: Projet vedette (texte + photo)
+        name: projet
+        widget: object
+        fields:
+        - label: Titre
+          name: titre
+          widget: string
+          required: false
+        - label: Texte
+          name: texte
+          widget: text
+          required: false
+        - *id002
+        - label: Liste à puces
+          name: liste
+          widget: list
+          required: false
+          field:
+            label: Ligne
+            name: ligne
+            widget: string
+            required: false
+        - label: Note
+          name: note
+          widget: text
+          required: false
+        - label: Photo
+          name: image
+          widget: image
+          required: false
+        - label: Description de la photo
+          name: alt
+          widget: string
+          required: false
+      - label: Bandeau vert « Demander un devis »
+        name: cta
+        widget: object
+        fields:
+        - label: Titre
+          name: titre
+          widget: string
+          required: false
+        - label: Texte
+          name: texte
+          widget: text
+          required: false
+        - label: Bouton
+          name: bouton
+          widget: object
+          required: false
+          fields:
+          - label: Texte du bouton
+            name: label
+            widget: string
+            required: false
+          - label: Lien (ex. contact.html)
+            name: lien
+            widget: string
+            required: false
+      - label: Formulaire de contact et coordonnées
+        name: contact
+        widget: object
+        fields:
+        - label: Info
+          name: info
+          widget: hidden
+          required: false
+          default: ''
+  - label: Services
+    name: services
+    file: data/services.json
+    format: json
+    fields:
+    - label: Titre de l’onglet du navigateur
+      name: titre_page
+      widget: string
+      required: false
+    - label: Contenu de la page
+      name: sections
+      widget: list
+      types: *id003
+  - label: Produits
+    name: produits
+    file: data/produits.json
+    format: json
+    fields:
+    - label: Titre de l’onglet du navigateur
+      name: titre_page
+      widget: string
+      required: false
+    - label: Contenu de la page
+      name: sections
+      widget: list
+      types: *id003
+  - label: À propos
+    name: a-propos
+    file: data/a-propos.json
+    format: json
+    fields:
+    - label: Titre de l’onglet du navigateur
+      name: titre_page
+      widget: string
+      required: false
+    - label: Contenu de la page
+      name: sections
+      widget: list
+      types: *id003
+  - label: Réalisations
+    name: realisations
+    file: data/realisations.json
+    format: json
+    fields:
+    - label: Titre de l’onglet du navigateur
+      name: titre_page
+      widget: string
+      required: false
+    - label: Contenu de la page
+      name: sections
+      widget: list
+      types: *id003
+  - label: Contact
+    name: contact
+    file: data/contact.json
+    format: json
+    fields:
+    - label: Titre de l’onglet du navigateur
+      name: titre_page
+      widget: string
+      required: false
+    - label: Contenu de la page
+      name: sections
+      widget: list
+      types: *id003
+- label: Coordonnées et réglages
+  name: reglages
+  files:
+  - label: Coordonnées de l’entreprise
+    name: site
+    file: data/site.json
+    format: json
+    fields:
+    - label: Nom
+      name: nom
+      widget: string
+      required: false
+    - label: Numéro WhatsApp (chiffres seulement, ex. 221772280695)
+      name: whatsapp
+      widget: string
+      required: false
+    - label: Téléphones
+      name: telephones
+      widget: list
+      required: false
+      field:
+        label: Numéro
+        name: numero
+        widget: string
+        required: false
+    - label: E-mail
+      name: email
+      widget: string
+      required: false
+    - label: Adresse
+      name: adresse
+      widget: string
+      required: false
+    - label: NINEA
+      name: ninea
+      widget: string
+      required: false
+    - label: Types de projet du formulaire de devis
+      name: types_projet
+      widget: list
+      required: false
+      field:
+        label: Type
+        name: type
+        widget: string
+        required: false
