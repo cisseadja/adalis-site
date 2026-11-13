@@ -5,8 +5,8 @@ backend:
 locale: fr
 media_folder: images
 public_folder: /images
-site_url: https://VOTRE-SITE.netlify.app
-display_url: https://VOTRE-SITE.netlify.app
+site_url: https://adalis-global-services.netlify.app
+display_url: https://adalis-global-services.netlify.app
 logo_url: /images/logo.png
 collections:
 - label: Pages du site
